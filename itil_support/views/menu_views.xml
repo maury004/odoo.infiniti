@@ -1,0 +1,5 @@
+<menuitem id="itil_support_menu" name="ITIL Support" sequence="10"/>
+<menuitem id="incident_menu" name="Incidents" parent="itil_support_menu" action="action_incident" sequence="10"/>
+<menuitem id="service_request_menu" name="Service Requests" parent="itil_support_menu" action="action_service_request" sequence="20"/>
+<menuitem id="problem_menu" name="Problems" parent="itil_support_menu" action="action_problem" sequence="30"/>
+<menuitem id="change_control_menu" name="Change Controls" parent="itil_support_menu" action="action_change_control" sequence="40"/>

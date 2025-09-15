@@ -1,0 +1,11 @@
+<security>
+    <record id="group_support_ticket_admin" model="res.groups">
+        <field name="name">Support Ticket Admin</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+
+    <record id="group_support_ticket_user" model="res.groups">
+        <field name="name">Support Ticket User</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</security>

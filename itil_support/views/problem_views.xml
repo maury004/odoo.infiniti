@@ -1,0 +1,38 @@
+<record id="view_problem_tree" model="ir.ui.view">
+    <field name="name">problem.tree</field>
+    <field name="model">itil_support.problem</field>
+    <field name="arch" type="xml">
+        <tree string="Problems">
+            <field name="name"/>
+            <field name="description"/>
+            <field name="priority"/>
+            <field name="status"/>
+        </tree>
+    </field>
+</record>
+
+<record id="view_problem_form" model="ir.ui.view">
+    <field name="name">problem.form</field>
+    <field name="model">itil_support.problem</field>
+    <field name="arch" type="xml">
+        <form string="Problem">
+            <sheet>
+                <group>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="priority"/>
+                    <field name="status"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
+<record id="action_problem" model="ir.actions.act_window">
+    <field name="name">Problems</field>
+    <field name="res_model">itil_support.problem</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem id="menu_problem_root" name="ITIL Support" sequence="10"/>
+<menuitem id="menu_problem" name="Problems" parent="menu_problem_root" action="action_problem" sequence="10"/>

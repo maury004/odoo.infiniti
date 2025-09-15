@@ -1,0 +1,9 @@
+access_rights,group_id,model_id,perm_read,perm_write,perm_create,perm_unlink
+access_incident_user,base.group_user,model_itil_support_incident,1,0,0,0
+access_incident_manager,base.group_system,model_itil_support_incident,1,1,1,1
+access_service_request_user,base.group_user,model_itil_support_service_request,1,0,0,0
+access_service_request_manager,base.group_system,model_itil_support_service_request,1,1,1,1
+access_problem_user,base.group_user,model_itil_support_problem,1,0,0,0
+access_problem_manager,base.group_system,model_itil_support_problem,1,1,1,1
+access_change_control_user,base.group_user,model_itil_support_change_control,1,0,0,0
+access_change_control_manager,base.group_system,model_itil_support_change_control,1,1,1,1

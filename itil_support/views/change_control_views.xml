@@ -1,0 +1,37 @@
+<record id="view_change_control_tree" model="ir.ui.view">
+    <field name="name">change.control.tree</field>
+    <field name="model">itil_support.change_control</field>
+    <field name="arch" type="xml">
+        <tree string="Change Controls">
+            <field name="name"/>
+            <field name="description"/>
+            <field name="status"/>
+            <field name="priority"/>
+        </tree>
+    </field>
+</record>
+
+<record id="view_change_control_form" model="ir.ui.view">
+    <field name="name">change.control.form</field>
+    <field name="model">itil_support.change_control</field>
+    <field name="arch" type="xml">
+        <form string="Change Control">
+            <sheet>
+                <group>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="status"/>
+                    <field name="priority"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
+<record id="action_change_control" model="ir.actions.act_window">
+    <field name="name">Change Controls</field>
+    <field name="res_model">itil_support.change_control</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem id="menu_change_control" name="Change Controls" parent="menu_support_tickets" action="action_change_control"/>
